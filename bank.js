@@ -3,16 +3,18 @@ document.getElementById('login-submit').addEventListener('click',function(){
     const emailField=document.getElementById('user-email');
     const userEmail=emailField.value;
     
+    
     //get user password
     const passwordField=document.getElementById('user-password');
     const userPassword=passwordField.value;
+    
     //console.log(userPassword);
 
     if(userEmail=='utpal250@gmail.com' && userPassword=='secret'){
-        console.log('valid user');
+        window.location.href='banking.html'
     }
     else{
-        console.log('No match email and password');
+        alert('no match email and passowrd')
     }
-    window.location.href='banking.html'
 })
+
